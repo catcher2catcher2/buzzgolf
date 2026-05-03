@@ -3,140 +3,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BUZZGOLF — AIゴルフロボットレッスン</title>
+<title>GOLROBO — BuzzFit Golf</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="badge">AI × Golf Technology</div>
-  <div class="robot-container">
-    <svg viewBox="0 0 160 200" xmlns="http://www.w3.org/2000/svg" width="160" height="200">
-      <rect x="45" y="90" width="70" height="80" rx="8" fill="#1a3a22" stroke="#4ade80" stroke-width="1.5"/>
-      <rect x="55" y="55" width="50" height="42" rx="6" fill="#1a3a22" stroke="#4ade80" stroke-width="1.5"/>
-      <circle cx="72" cy="73" r="6" fill="#4ade80" opacity="0.9"/>
-      <circle cx="88" cy="73" r="6" fill="#4ade80" opacity="0.9"/>
-      <circle cx="72" cy="73" r="2.5" fill="#0a1a0f"/>
-      <circle cx="88" cy="73" r="2.5" fill="#0a1a0f"/>
-      <line x1="80" y1="55" x2="80" y2="42" stroke="#4ade80" stroke-width="2"/>
-      <circle cx="80" cy="40" r="4" fill="#4ade80"/>
-      <rect x="55" y="168" width="22" height="24" rx="4" fill="#122518" stroke="#4ade80" stroke-width="1"/>
-      <rect x="83" y="168" width="22" height="24" rx="4" fill="#122518" stroke="#4ade80" stroke-width="1"/>
-      <g class="robot-arm">
-        <line x1="45" y1="100" x2="12" y2="140" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
-        <line x1="12" y1="140" x2="8" y2="168" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-        <rect x="2" y="166" width="14" height="6" rx="2" fill="#4ade80"/>
-      </g>
-      <line x1="115" y1="100" x2="138" y2="120" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
-      <g class="ball">
-        <circle cx="10" cy="172" r="7" fill="#fff"/>
-      </g>
-    </svg>
-  </div>
-  <h1 class="hero-title">BUZZ<span>GOLF</span></h1>
-  <p class="hero-sub">AIゴルフロボットが、あなたのスイングを科学する</p>
-  <button class="hero-cta" onclick="document.querySelector('.pricing').scrollIntoView({behavior:'smooth'})">無料体験を予約する</button>
+  <div class="access-badge">目黒駅 徒歩3分 ／ <span>完全予約制・初心者限定</span></div>
+  <p class="hero-eyebrow">BuzzFit Golf presents</p>
+  <h1 class="hero-title">
+    GOLROBO
+    <span class="sub">人間には、教えられない。</span>
+  </h1>
+  <div class="divider"></div>
+  <p class="hero-copy">
+    正しいスイングは、<strong>頭で覚えるものではない。</strong><br>
+    体が、勝手に、覚えるものだ。<br>
+    そして、それには<strong>30分もいらない。</strong>
+  </p>
+  <button class="hero-cta" onclick="document.querySelector('.location').scrollIntoView({behavior:'smooth'})">体験を予約する</button>
+  <p class="hero-note">初回体験 完全無料</p>
 </section>
 
-<!-- STATS -->
-<div class="stats">
-  <div class="stat"><div class="stat-num">98%</div><div class="stat-label">スコア改善率</div></div>
-  <div class="stat"><div class="stat-num">0.01秒</div><div class="stat-label">モーション解析速度</div></div>
-  <div class="stat"><div class="stat-num">2,400+</div><div class="stat-label">レッスン済み会員数</div></div>
-  <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">いつでもレッスン可能</div></div>
+<section class="no-ball">
+  <div class="no-ball-inner">
+    <div class="tag">The Space</div>
+    <h2 class="no-ball-title">ここでは、<br>ボールを打たない。</h2>
+    <div class="no-ball-body">
+      <p>打席はない。ネットもない。<strong>ボールすら、ない。</strong></p>
+      <br>
+      <p>目黒の、静かなパーソナルジムの一室。<br>1つの機械と、2つの器具だけがある。</p>
+      <br>
+      <p>今は、まだ打たない。<em>それには、理由がある。</em></p>
+    </div>
+  </div>
+</section>
+
+<section class="room">
+  <div class="tag">What's Inside</div>
+  <h2 class="room-title">部屋に<br>あるもの</h2>
+  <div class="room-items">
+    <div class="room-item main">
+      <div class="room-item-num">01</div>
+      <div class="room-item-body">
+        <h3>GOLROBO</h3>
+        <p>正しいオンプレーンスイングの軌道を、空間上に完璧に再現する機械。クラブを握れば、体が正しい動きをなぞる。不可能と言われた構造を、独自技術で実現した。</p>
+      </div>
+    </div>
+    <div class="room-item">
+      <div class="room-item-num">02</div>
+      <div class="room-item-body">
+        <h3>ボディターンマシン</h3>
+        <p>体の回転を正しく身につけるための器具。スイングの土台となる体幹の動きを、自然に体に入れていく。</p>
+      </div>
+    </div>
+    <div class="room-item">
+      <div class="room-item-num">03</div>
+      <div class="room-item-body">
+        <h3>フェースターンマシン</h3>
+        <p>クラブフェースの正しい返し方を習得するための器具。手先ではなく、体全体の連動として覚えていく。</p>
+      </div>
+    </div>
+  </div>
+  <div class="room-note">以上。それだけ。余計なものは、何もない。</div>
+</section>
+
+<section class="science">
+  <div class="science-inner">
+    <div class="tag">Why It Works</div>
+    <h2 class="science-title">なぜ、<br>体が覚えるのか</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <div class="why-title">スイングは小脳で覚える</div>
+        <div class="why-body">自転車と同じ。頭で考えているうちは、本当に覚えていない。<em>体が勝手に動く状態</em>になって、はじめて完成する。</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <div class="why-title">人間には再現できない</div>
+        <div class="why-body">コーチも生徒も、毎回微妙に動きが違う。それが人間の限界。<em>機械だけが、毎回完璧に同じ動きを再現できる。</em></div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <div class="why-title">握るだけでいい</div>
+        <div class="why-body">考えなくていい。クラブを握れば、GOLROBOが<em>正しい軌道に導く。</em>それを繰り返すだけ。</div>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <div class="why-title">やりすぎは、逆効果</div>
+        <div class="why-body">小脳学習には、「間」が必要。だから、毎回最大30分。だから、週1回。10日に1回でいい。むしろそれが正しい。<em>焦らなくていい、という科学的な理由がある。</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="routine">
+  <div class="tag">The Session</div>
+  <h2 class="routine-title">最大30分。<br>それ以上は、いらない。</h2>
+  <div class="routine-flow">
+    <div class="routine-row">
+      <div class="routine-row-label">1ルーティン</div>
+      <div class="routine-row-val">約2分</div>
+    </div>
+    <div class="routine-row">
+      <div class="routine-row-label">1セッション</div>
+      <div class="routine-row-val">5〜7回</div>
+    </div>
+    <div class="routine-row">
+      <div class="routine-row-label">推奨ペース</div>
+      <div class="routine-row-val">週1〜10日に1回</div>
+    </div>
+  </div>
+  <div class="routine-insight">
+    <p>小脳学習には、「間」が必要。だから、毎回最大30分。<br>だから、週1回。10日に1回でいい。<br>むしろそれが正しい。<strong>焦らなくていい、という科学的な理由がある。</strong></p>
+  </div>
+</section>
+
+<section class="journey">
+  <div class="journey-inner">
+    <div class="tag">The Journey</div>
+    <h2 class="journey-title">6回で、<br>一生モノになる。</h2>
+    <div class="journey-steps">
+      <div class="journey-step">
+        <div class="journey-step-left">
+          <div class="journey-step-circle">1</div>
+          <div class="journey-step-when">初回</div>
+        </div>
+        <div>
+          <div class="journey-step-title">体が、戸惑う</div>
+          <div class="journey-step-body">「これが正しいスイング？」知っているようで、知らなかった動き。<em>それが最初の発見。</em></div>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-step-left">
+          <div class="journey-step-circle">3</div>
+          <div class="journey-step-when">3回目ごろ</div>
+        </div>
+        <div>
+          <div class="journey-step-title">なじんでくる</div>
+          <div class="journey-step-body">体が動きを覚え始める。<em>変化が、静かに始まっている。</em></div>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="journey-step-left">
+          <div class="journey-step-circle">5</div>
+          <div class="journey-step-when">5回目ごろ</div>
+        </div>
+        <div>
+          <div class="journey-step-title">イメージができる</div>
+          <div class="journey-step-body">トッププロのスイングを見て、「できる気がする」となる。<em>体の中に、運動モデルが生まれた証拠。</em></div>
+        </div>
+      </div>
+      <div class="journey-step highlight">
+        <div class="journey-step-left">
+          <div class="journey-step-circle">6</div>
+          <div class="journey-step-when">6回目 / 3ヶ月</div>
+        </div>
+        <div>
+          <div class="journey-step-title">一生モノになる</div>
+          <div class="journey-step-body">自転車に一度乗れると、一生乗れる。それと同じことが起きる。<em>小脳学習、完了。</em>3ヶ月で、完結する。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="developer">
+  <div class="developer-inner">
+    <p class="developer-line">「不可能と言われた機械を、<br><strong>6ヶ月で作った開発者がいる。</strong>」</p>
+  </div>
 </div>
 
-<!-- FEATURES -->
-<section class="features">
-  <div class="section-label">Features</div>
-  <h2 class="section-title">人間のプロを超える<br>精度と速度</h2>
-  <div class="feature-grid">
-    <div class="feature-card">
-      <div class="feature-title">リアルタイム解析</div>
-      <div class="feature-desc">スイング中のすべての動きを0.01秒単位でキャプチャ。AIが即座にフィードバックを提供します。</div>
+<section class="location">
+  <div class="location-inner">
+    <div class="location-tag">Access</div>
+    <h2 class="location-title">目黒の<br>秘密基地</h2>
+    <p class="location-address">目黒駅 徒歩3分 ／ パーソナルジム BuzzFit 内</p>
+    <div class="location-box">
+      <p>看板はない。打席もない。ボールもない。<br><strong>1つの機械と2つの器具、そしてあなたの体だけ。</strong><br><br>完全予約制。初心者限定。初回無料。</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-title">3Dモーションキャプチャ</div>
-      <div class="feature-desc">体の360度すべての軸を同時計測。あなたのスイングの癖を3Dで可視化します。</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-title">パーソナライズドプラン</div>
-      <div class="feature-desc">あなたの体型・柔軟性・プレースタイルに合わせた、世界でひとつだけのレッスンプログラム。</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-title">進捗ダッシュボード</div>
-      <div class="feature-desc">毎回のレッスンデータが蓄積され、成長の軌跡をグラフで確認。モチベーションが続きます。</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-title">AIコーチング音声</div>
-      <div class="feature-desc">スイング直後に日本語で音声アドバイス。まるでプロコーチが隣にいるような体験。</div>
-    </div>
-    <div class="feature-card">
-      <div class="feature-title">プロデータとの比較</div>
-      <div class="feature-desc">トップ選手のスイングデータと自分を比較できます。</div>
-    </div>
+    <button class="location-cta">体験を予約する →</button>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section class="process">
-  <div class="process-inner">
-    <div class="section-label">How it works</div>
-    <h2 class="section-title">3ステップで始められる</h2>
-    <div class="steps">
-      <div class="step"><div class="step-num">01</div><div class="step-content"><h3>来場・セットアップ</h3><p>施設にお越しいただき、BUZZGOLFロボットの前に立つだけ。難しい準備は一切不要です。</p></div></div>
-      <div class="step"><div class="step-num">02</div><div class="step-content"><h3>スイング解析スタート</h3><p>AIロボットがあなたのスイングを多角的にキャプチャ。わずか数球で詳細データが得られます。</p></div></div>
-      <div class="step"><div class="step-num">03</div><div class="step-content"><h3>レッスン＆改善サイクル</h3><p>AIが個別プランを生成し、その場でフィードバック。通えば通うほど上達します。</p></div></div>
-    </div>
-  </div>
+<section class="final">
+  <h2 class="final-title">体で、<br><span>覚えろ。</span></h2>
+  <p class="final-sub">6回 ／ 3ヶ月 ／ 一生モノ</p>
+  <button class="final-btn">今すぐ予約する</button>
 </section>
 
-<!-- PRICING -->
-<section class="pricing">
-  <div class="section-label">Pricing</div>
-  <h2 class="section-title">シンプルな料金体系</h2>
-  <div class="plans">
-    <div class="plan">
-      <div class="plan-name">STARTER</div>
-      <div class="plan-price">¥3,980<span>/月</span></div>
-      <div class="plan-desc">ゴルフを始めたい方に</div>
-      <ul class="plan-features">
-        <li>月4回レッスン</li><li>基本スイング解析</li><li>進捗レポート（月次）</li><li>AIフィードバック</li>
-      </ul>
-      <button class="plan-btn">プランを選ぶ</button>
-    </div>
-    <div class="plan featured">
-      <div class="plan-badge">人気No.1</div>
-      <div class="plan-name">PRO</div>
-      <div class="plan-price">¥9,800<span>/月</span></div>
-      <div class="plan-desc">本気でスコアを伸ばしたい方に</div>
-      <ul class="plan-features">
-        <li>月8回レッスン</li><li>フル3Dモーション解析</li><li>週次詳細レポート</li><li>プロデータ比較機能</li><li>音声AIコーチング</li>
-      </ul>
-      <button class="plan-btn">プランを選ぶ</button>
-    </div>
-    <div class="plan">
-      <div class="plan-name">ELITE</div>
-      <div class="plan-price">¥19,800<span>/月</span></div>
-      <div class="plan-desc">競技・大会を目指す方に</div>
-      <ul class="plan-features">
-        <li>月無制限レッスン</li><li>専用ロボット優先予約</li><li>人間プロコーチ併用</li><li>大会前特別プログラム</li><li>全機能アンロック</li>
-      </ul>
-      <button class="plan-btn">プランを選ぶ</button>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-section">
-  <h2>今すぐ、<span>スコアを</span>変えよう</h2>
-  <p>初回レッスンは無料。まずは体験してみてください。</p>
-  <button class="hero-cta">無料体験を予約する →</button>
-</section>
-
-<footer>© 2026 BUZZGOLF Inc. — AI-Powered Golf Coaching</footer>
+<footer>© 2026 BuzzFit Golf — GOLROBO. 目黒. All rights reserved.</footer>
 
 <script src="script.js"></script>
 </body>
